@@ -6,10 +6,9 @@ const createTextFromTemplate = (title, url, template) => {
 
 
 const run = () => {
-  //現在のウインドウのタブをすべて取得
   chrome.tabs.query({windowId: chrome.windows.WINDOW_ID_CURRENT},(tabs) => {
     let multitwitchUrl = 'https://www.multitwitch.tv/';
-    const template = '%%URL%%'; //テンプレ
+    const template = '%%URL%%';
 
     tabs.forEach((tab,i) => {
         if (tab.url.indexOf('https://www.twitch.tv/') == 0) {
