@@ -1,0 +1,16 @@
+{
+    "name": "multitwich all cahnnels",
+    "author": "pongasa",
+    "version": "1.0.0",
+    "description": "開いてる全てのtwitchタブをmultitwitchで開く",
+    "browser_action":{
+      "default_title": "multitwich all cahnnels",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "clipboardWrite"
+    ],
+    "manifest_version": 2
+  }
